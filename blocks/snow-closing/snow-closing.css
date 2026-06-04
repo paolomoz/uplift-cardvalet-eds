@@ -1,0 +1,9 @@
+.snow-closing.block { width: 100vw; margin-left: calc(50% - 50vw); background: var(--navy); color: #fff; text-align: center; padding: 64px 32px; }
+.snow-closing-inner { max-width: 1200px; margin: 0 auto; }
+.snow-closing h2 { color: #fff; font-size: clamp(30px, 4.2vw, 44px); margin: 0 0 .4em; }
+.snow-closing p { color: rgb(255 255 255 / 85%); max-width: 54ch; margin: 0 auto 28px; }
+.snow-btn-onnavy { background: #fff; color: var(--navy); border-color: #fff; }
+.snow-btn-onnavy:hover { background: var(--surface); }
+
+/* full-bleed: remove the section padding so the navy band fills edge-to-edge */
+main .section:has(.snow-closing) { padding: 0; }

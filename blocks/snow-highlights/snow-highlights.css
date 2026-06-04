@@ -1,0 +1,14 @@
+.snow-highlights.block { max-width: 1200px; margin: 0 auto; }
+.snow-section-head { margin-bottom: 40px; }
+.snow-eyebrow { font-family: 'Univers Fiserv Bold', arial, sans-serif; font-weight: 700; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--orange); margin: 0 0 12px; }
+.snow-highlights h2 { font-size: clamp(30px, 4.2vw, 44px); color: var(--navy); margin: 0; }
+.snow-feat3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.snow-feat-ic { width: 54px; height: 54px; border-radius: 12px; background: var(--surface); display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+.snow-feat-ic svg { width: 28px; height: 28px; }
+.snow-feat h3 { font-family: 'Univers Fiserv Bold', arial, sans-serif; font-weight: 700; font-size: 24px; color: var(--navy); margin: 0 0 .4em; }
+.snow-feat p { font-size: var(--body-font-size-xs); margin: 0; }
+.snow-cta { margin-top: 32px; }
+.snow-btn { display: inline-flex; align-items: center; font-family: 'Univers Fiserv Bold', arial, sans-serif; font-weight: 700; font-size: 15px; padding: 14px 28px; border-radius: var(--radius-xs); text-decoration: none; border: 2px solid var(--navy); }
+.snow-btn-secondary { background: transparent; color: var(--navy); }
+.snow-btn-secondary:hover { background: var(--navy); color: #fff; }
+@media (width < 900px) { .snow-feat3 { grid-template-columns: 1fr; } }

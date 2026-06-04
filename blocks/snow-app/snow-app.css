@@ -1,0 +1,6 @@
+.snow-app.block { max-width: 1200px; margin: 0 auto; }
+.snow-split { display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; align-items: center; }
+.snow-app h2 { font-size: clamp(30px, 4.2vw, 44px); color: var(--navy); margin: 0 0 .4em; }
+.snow-app-lead { font-size: 20px; color: var(--ink-soft); max-width: 48ch; }
+.snow-app-media img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-card); }
+@media (width < 900px) { .snow-split { grid-template-columns: 1fr; gap: 32px; } }

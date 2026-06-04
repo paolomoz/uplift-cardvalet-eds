@@ -1,0 +1,9 @@
+.snow-benefits.block { max-width: 1200px; margin: 0 auto; }
+.snow-cardgrid { display: grid; grid-template-columns: 1fr; gap: 24px; }
+.snow-card { background: #fff; border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow-card); }
+.snow-card h3 { font-family: 'Univers Fiserv Bold', arial, sans-serif; font-weight: 700; font-size: 24px; color: var(--navy); margin: 0 0 .5em; }
+.snow-card p { font-size: var(--body-font-size-xs); margin: 0 0 .6em; }
+.snow-card ul { margin: 0; padding-left: 18px; }
+.snow-card li { margin-bottom: 6px; }
+@media (width >= 600px) { .snow-cardgrid { grid-template-columns: repeat(2, 1fr); } }
+@media (width >= 900px) { .snow-cardgrid { grid-template-columns: repeat(3, 1fr); } }
