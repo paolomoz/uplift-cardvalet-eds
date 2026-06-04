@@ -1,0 +1,4 @@
+[
+  { "id": "cards", "components": ["card"] },
+  { "id": "steps", "components": ["step"] }
+]

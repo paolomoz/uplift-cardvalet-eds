@@ -1,0 +1,25 @@
+[
+  { "id": "hero", "fields": [
+    { "component": "reference", "name": "image", "label": "Background image", "valueType": "string" },
+    { "component": "text", "name": "imageAlt", "label": "Alt text", "valueType": "string" },
+    { "component": "text-input", "name": "eyebrow", "label": "Eyebrow", "valueType": "string" },
+    { "component": "text-input", "name": "heading", "label": "Heading", "valueType": "string" },
+    { "component": "text-area", "name": "lead", "label": "Lead", "valueType": "string" },
+    { "component": "aem-content", "name": "cta", "label": "CTA", "valueType": "string" }
+  ]},
+  { "id": "card", "fields": [
+    { "component": "reference", "name": "image", "label": "Image (optional)", "valueType": "string" },
+    { "component": "text", "name": "imageAlt", "label": "Alt text", "valueType": "string" },
+    { "component": "text-input", "name": "title", "label": "Title", "valueType": "string" },
+    { "component": "richtext", "name": "body", "label": "Body", "valueType": "string" }
+  ]},
+  { "id": "step", "fields": [
+    { "component": "text-input", "name": "title", "label": "Step title", "valueType": "string" },
+    { "component": "richtext", "name": "body", "label": "Step body", "valueType": "string" }
+  ]},
+  { "id": "cta", "fields": [
+    { "component": "text-input", "name": "heading", "label": "Heading", "valueType": "string" },
+    { "component": "text-area", "name": "body", "label": "Body", "valueType": "string" },
+    { "component": "aem-content", "name": "cta", "label": "CTA", "valueType": "string" }
+  ]}
+]

@@ -323,3 +323,69 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+/* ============================================================
+   CardValet on the Fiserv brand — theme overrides
+   (stardust:aem-import genuine-blocks; brand source = fiserv.com)
+   ============================================================ */
+:root {
+  --navy: #002754;
+  --ink: #3c3c3c;
+  --ink-soft: #4a4a4a;
+  --surface: #f0f0f0;
+  --border: #bbbbbb;
+  --link: #237cb8;
+  --orange: #ff6600;
+  --white: #fff;
+  --shadow-card: 0 4px 15px rgba(0 0 0 / 18%);
+  --radius: 16px;
+  --radius-xs: 3px;
+
+  /* override boilerplate tokens */
+  --background-color: #fff;
+  --light-color: #f0f0f0;
+  --dark-color: #002754;
+  --text-color: #3c3c3c;
+  --link-color: #237cb8;
+  --link-hover-color: #002754;
+  --body-font-family: 'Univers Fiserv Light', 'Univers Fiserv Regular', arial, sans-serif;
+  --heading-font-family: 'PP Formula', 'Univers Fiserv Bold', arial, sans-serif;
+  --nav-height: 74px;
+}
+
+body { color: var(--ink); font-weight: 300; line-height: 1.6; }
+h1, h2, h3, h4 { color: var(--navy); font-family: var(--heading-font-family); font-weight: 600; line-height: 1.1; }
+h3 { font-family: 'Univers Fiserv Bold', arial, sans-serif; font-weight: 700; }
+main { font-size: var(--body-font-size-s); }
+main a { color: var(--link); }
+
+/* eyebrow: first <p> before a heading */
+main .default-content-wrapper > p:first-child:has(+ h2),
+main .default-content-wrapper > p.eyebrow {
+  font-family: 'Univers Fiserv Bold', arial, sans-serif;
+  font-weight: 700; font-size: 13px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--orange); margin-bottom: 12px;
+}
+
+/* buttons */
+main .button-container { margin: 16px 0; }
+main a.button {
+  font-family: 'Univers Fiserv Bold', arial, sans-serif;
+  font-weight: 700; font-size: 15px; padding: 14px 28px;
+  border-radius: var(--radius-xs); border: 2px solid var(--navy);
+  background: var(--navy); color: #fff; text-decoration: none;
+}
+main a.button:hover { background: #013a7a; border-color: #013a7a; }
+main a.button.secondary { background: transparent; color: var(--navy); }
+main a.button.secondary:hover { background: var(--navy); color: #fff; }
+
+/* sections + substrates */
+main .section { padding: 64px 24px; }
+main .section > div { max-width: 1200px; margin: 0 auto; }
+main .section.light, main .section.stone { background: var(--surface); }
+main .section.dark { background: var(--navy); color: #fff; }
+main .section.dark h1, main .section.dark h2, main .section.dark h3 { color: #fff; }
+
+@media (width >= 900px) {
+  main .section { padding: 64px 32px; }
+}

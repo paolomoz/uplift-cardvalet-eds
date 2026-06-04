@@ -1,0 +1,4 @@
+.cta.block { text-align: center; }
+.section.dark .cta.block h2 { color: #fff; }
+.cta.block p { color: inherit; max-width: 54ch; margin: 0 auto 24px; opacity: .9; }
+.section.dark .cta.block .button-container a.button { background: #fff; color: var(--navy); border-color: #fff; }
