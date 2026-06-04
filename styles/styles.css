@@ -389,3 +389,36 @@ main .section.dark h1, main .section.dark h2, main .section.dark h3 { color: #ff
 @media (width >= 900px) {
   main .section { padding: 64px 32px; }
 }
+
+/* ============================================================
+   CardValet reskin — prototype-parity fixes
+   ============================================================ */
+/* heading scale matched to the prototype (h1 56 / h2 44 / h3 24) */
+:root {
+  --heading-font-size-xxl: clamp(40px, 6vw, 56px);
+  --heading-font-size-xl: clamp(30px, 4.2vw, 44px);
+  --heading-font-size-l: 24px;
+  --heading-font-size-m: 20px;
+}
+
+/* header chrome matched to the prototype */
+header .nav-brand a {
+  font-family: 'Univers Fiserv Bold', arial, sans-serif;
+  font-weight: 700; font-size: 22px; color: var(--navy); text-decoration: none;
+}
+header nav .nav-sections ul { gap: 30px; }
+header nav .nav-sections ul > li > a,
+header nav .nav-sections a {
+  font-family: 'Univers Fiserv Bold', arial, sans-serif;
+  font-weight: 700; font-size: 14px; letter-spacing: 0.04em;
+  text-transform: uppercase; color: var(--navy); text-decoration: none;
+}
+header nav .nav-sections a:hover { color: var(--link); }
+header nav .nav-tools a {
+  display: inline-block;
+  font-family: 'Univers Fiserv Bold', arial, sans-serif;
+  font-weight: 700; font-size: 15px; padding: 12px 24px;
+  background: var(--navy); color: #fff; border: 2px solid var(--navy);
+  border-radius: var(--radius-xs); text-decoration: none;
+}
+header nav .nav-tools a:hover { background: #013a7a; border-color: #013a7a; }

@@ -1,4 +1,4 @@
-.cards.block ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.cards.block ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 24px; grid-template-columns: 1fr; }
 .cards.block ul > li { background: #fff; border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow-card); }
 .cards.block .cards-card-image img { width: 100%; height: 160px; object-fit: cover; border-radius: 10px; margin-bottom: 16px; }
 .cards.block h3 { margin: 0 0 .5em; }
@@ -6,8 +6,13 @@
 .cards.block ul ul { display: block; padding-left: 18px; margin: 0; }
 .cards.block ul ul li { all: unset; display: list-item; list-style: disc; margin-bottom: 6px; }
 
-/* feature variant: borderless icon-led 3-up */
-.cards.feature ul { grid-template-columns: repeat(3, 1fr); }
-.cards.feature ul > li { background: none; box-shadow: none; padding: 0; border-top: 4px solid var(--surface); padding-top: 20px; }
-.cards.feature h3 { color: var(--navy); }
-@media (width < 900px) { .cards.feature ul { grid-template-columns: 1fr; } }
+/* 3-up on desktop (matches the prototype), 2-up tablet */
+@media (width >= 600px) { .cards.block ul { grid-template-columns: repeat(2, 1fr); } }
+@media (width >= 900px) { .cards.block ul { grid-template-columns: repeat(3, 1fr); } }
+
+/* feature variant: borderless, icon-led 3-up (matches the prototype) */
+.cards.feature ul { gap: 32px; }
+.cards.feature ul > li { background: none; box-shadow: none; padding: 0; }
+.cards.feature .icon { width: 54px; height: 54px; border-radius: 12px; background: var(--surface); display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+.cards.feature .icon img { width: 28px; height: 28px; }
+.cards.feature h3 { color: var(--navy); margin-bottom: .4em; }
