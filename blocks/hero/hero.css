@@ -10,4 +10,4 @@
 .hero .hero-content p.eyebrow { color: var(--orange); }
 .hero .hero-content .button-container a.button { background: #fff; color: var(--navy); border-color: #fff; }
 .hero .hero-content .button-container a.button:hover { background: var(--surface); }
-@media (width >= 900px) { .hero .hero-content { padding: 110px 32px; } }
+@media (width >= 900px) { .hero .hero-content { padding: 96px 32px; } }
