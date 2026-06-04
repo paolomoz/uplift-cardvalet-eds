@@ -1,0 +1,4 @@
+.snow-prose.block { max-width: 1200px; margin: 0 auto; }
+.snow-prose-col { max-width: 72ch; }
+.snow-prose-col p { margin: 0 0 1.2em; }
+.snow-prose-col h3 { margin: 1.6em 0 .5em; color: var(--navy); }

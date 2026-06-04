@@ -1,0 +1,9 @@
+.snow-steps.block { max-width: 1200px; margin: 0 auto; }
+.snow-steps-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 24px; }
+.snow-steps-list li { display: grid; grid-template-columns: 84px 1fr; gap: 24px; align-items: start; background: #fff; border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow-card); }
+.snow-step-num { width: 64px; height: 64px; border-radius: 50%; background: var(--navy); color: #fff; display: flex; align-items: center; justify-content: center; font-family: var(--heading-font-family); font-size: 26px; }
+.snow-step-body h3 { font-family: 'Univers Fiserv Bold', arial, sans-serif; font-weight: 700; font-size: 22px; color: var(--navy); margin: 0 0 .4em; }
+.snow-step-body p { margin: 0 0 .5em; font-size: var(--body-font-size-xs); }
+.snow-step-body ul { padding-left: 18px; margin: 8px 0 0; }
+.snow-step-body li { margin-bottom: 6px; }
+@media (width < 900px) { .snow-steps-list li { grid-template-columns: 1fr; } }

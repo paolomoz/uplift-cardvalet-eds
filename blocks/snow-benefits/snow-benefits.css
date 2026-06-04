@@ -1,6 +1,8 @@
+main .section:has(.snow-benefits) { background: var(--surface); }
 .snow-benefits.block { max-width: 1200px; margin: 0 auto; }
 .snow-cardgrid { display: grid; grid-template-columns: 1fr; gap: 24px; }
 .snow-card { background: #fff; border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow-card); }
+.snow-card-img img { width: 100%; height: 160px; object-fit: cover; border-radius: 10px; margin-bottom: 16px; }
 .snow-card h3 { font-family: 'Univers Fiserv Bold', arial, sans-serif; font-weight: 700; font-size: 24px; color: var(--navy); margin: 0 0 .5em; }
 .snow-card p { font-size: var(--body-font-size-xs); margin: 0 0 .6em; }
 .snow-card ul { margin: 0; padding-left: 18px; }

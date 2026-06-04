@@ -1,0 +1,4 @@
+main .section:has(.snow-download) { background: var(--surface); }
+.snow-download.block { max-width: 1200px; margin: 0 auto; text-align: center; }
+.snow-download h2 { font-size: clamp(30px, 4.2vw, 44px); color: var(--navy); margin: 0 0 24px; }
+.snow-download .snow-appbadges { justify-content: center; }
