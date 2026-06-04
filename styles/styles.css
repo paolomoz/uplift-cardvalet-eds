@@ -424,4 +424,4 @@ header nav .nav-tools a {
 header nav .nav-tools a:hover { background: #013a7a; border-color: #013a7a; }
 
 /* page-metadata block is consumed into <head>; hide any rendered remnant section */
-main .section:has(.metadata) { display: none; }
+main .section:empty { display: none; }
