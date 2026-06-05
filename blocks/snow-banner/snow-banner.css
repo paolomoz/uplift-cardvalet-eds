@@ -8,4 +8,7 @@
 a.snow-banner-cta { display: inline-flex; align-items: center; justify-content: space-between; gap: 72px; background: #fff; color: var(--navy); font-family: 'Univers Fiserv Bold', arial, sans-serif; font-weight: 700; font-size: 14px; letter-spacing: .1em; text-transform: uppercase; padding: 25px 34px; min-width: 300px; text-decoration: none; transition: background .2s; }
 a.snow-banner-cta:hover { background: var(--surface); }
 .snow-banner-arrow { width: 40px; height: 16px; flex: none; }
-main .section:has(.snow-banner) { padding: 0; }
+/* full-bleed: kill section padding AND the boilerplate 40px section margin (and neighbours' facing margins) */
+main .section:has(.snow-banner) { padding: 0; margin: 0; }
+main .section:has(.snow-banner) + .section { margin-top: 0; }
+main .section:has(+ .section:has(.snow-banner)) { margin-bottom: 0; }
