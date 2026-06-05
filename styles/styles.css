@@ -438,3 +438,4 @@ main .section:empty { display: none; }
 .snow-appbadge-tx { display: flex; flex-direction: column; line-height: 1.12; text-align: left; }
 .snow-appbadge-tx small { font-family: arial, sans-serif; font-size: 10px; font-weight: 400; letter-spacing: .01em; text-transform: none; opacity: .9; }
 .snow-appbadge-tx strong { font-family: 'Univers Fiserv Bold', arial, sans-serif; font-size: 18px; font-weight: 700; letter-spacing: .01em; }
+a.snow-appbadge, a.snow-appbadge:hover, a.snow-appbadge:visited { color: #fff; }
