@@ -6,9 +6,6 @@
 .snow-hero .snow-hero-rule { display: block; width: 64px; height: 5px; background: var(--orange); margin-bottom: 26px; }
 .snow-hero h1 { color: #fff; max-width: 16ch; font-size: clamp(40px, 6vw, 56px); line-height: 1.1; margin: 0 0 16px; }
 .snow-hero .snow-hero-lead { color: rgb(255 255 255 / 90%); max-width: 48ch; font-size: 20px; margin: 0; }
-.snow-appbadges { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 24px; }
-.snow-appbadge { display: inline-flex; flex-direction: column; background: #000; color: #fff; border-radius: 6px; padding: 9px 18px; font-family: 'Univers Fiserv Bold', arial, sans-serif; font-weight: 700; font-size: 15px; text-decoration: none; line-height: 1.15; }
-.snow-appbadge small { font-size: 10px; font-weight: 400; opacity: .8; font-family: 'Univers Fiserv Light', arial, sans-serif; }
 
 /* full-bleed: remove the section padding around the hero */
 main .section:has(.snow-hero) { padding: 0; }

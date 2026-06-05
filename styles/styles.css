@@ -425,3 +425,16 @@ header nav .nav-tools a:hover { background: #013a7a; border-color: #013a7a; }
 
 /* page-metadata block is consumed into <head>; hide any rendered remnant section */
 main .section:empty { display: none; }
+
+/* ============================================================
+   App-store badges (App Store + Google Play) — standard look
+   ============================================================ */
+.snow-appbadges { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
+.snow-appbadge { display: inline-flex; align-items: center; gap: 10px; background: #000; color: #fff; border: 1px solid rgb(255 255 255 / 30%); border-radius: 9px; padding: 8px 16px; min-width: 168px; text-decoration: none; transition: border-color .2s, transform .2s; }
+.snow-appbadge:hover { border-color: rgb(255 255 255 / 75%); transform: translateY(-1px); }
+.snow-appbadge-ic { display: flex; align-items: center; justify-content: center; width: 26px; height: 26px; flex: none; }
+.snow-appbadge-ic svg { width: 100%; height: 100%; display: block; }
+.snow-appbadge.is-apple .snow-appbadge-ic { margin-top: -2px; }
+.snow-appbadge-tx { display: flex; flex-direction: column; line-height: 1.12; text-align: left; }
+.snow-appbadge-tx small { font-family: arial, sans-serif; font-size: 10px; font-weight: 400; letter-spacing: .01em; text-transform: none; opacity: .9; }
+.snow-appbadge-tx strong { font-family: 'Univers Fiserv Bold', arial, sans-serif; font-size: 18px; font-weight: 700; letter-spacing: .01em; }

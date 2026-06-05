@@ -1,11 +1,9 @@
 /**
- * snow-hero — full-bleed photo hero with navy overlay (home prototype "hero" section)
- * Authoring rows (positional):
- *   1. <picture> background image
- *   2. headline (becomes <h1>)
- *   3. lead paragraph
- *   4. app-store links (App Store, Google Play) — rendered as badges
+ * snow-hero — full-bleed photo hero with navy overlay.
+ * Rows: 1 image · 2 headline · 3 lead · 4 app-store links
  */
+import { appBadges } from '../../scripts/appbadges.js';
+
 const t = (r) => (r?.firstElementChild?.textContent || '').trim();
 export default function decorate(block) {
   const rows = [...block.children];
@@ -23,18 +21,7 @@ export default function decorate(block) {
     content.append(p);
   }
   const links = rows[3] ? [...rows[3].querySelectorAll('a')] : [];
-  if (links.length) {
-    const badges = document.createElement('div');
-    badges.className = 'snow-appbadges';
-    links.forEach((a) => {
-      const badge = document.createElement('a');
-      badge.className = 'snow-appbadge';
-      badge.href = a.href;
-      badge.innerHTML = `<small>Download on the</small>${a.textContent.trim()}`;
-      badges.append(badge);
-    });
-    content.append(badges);
-  }
+  if (links.length) content.append(appBadges(links));
   const bg = document.createElement('div');
   bg.className = 'snow-hero-bg';
   if (picture) bg.append(picture.closest('picture') || picture);
