@@ -137,7 +137,12 @@ async function loadEager(doc) {
   if (main) {
     decorateMain(main);
     document.body.classList.add('appear');
-    await loadSection(main.querySelector('.section'), waitForFirstImage);
+    // Quick Edit (da.live): waitForFirstImage blocks inside the editor portal and
+    // yields a blank page — skip it when rendering in a quick-edit context.
+    const inQuickEdit = new URL(window.location.href).searchParams.has('quick-edit')
+      || document.documentElement.classList.contains('quick-edit')
+      || document.body.classList.contains('quick-edit');
+    await loadSection(main.querySelector('.section'), inQuickEdit ? () => {} : waitForFirstImage);
   }
 
   try {
